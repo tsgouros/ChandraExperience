@@ -13,6 +13,8 @@
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
+# Except for this one.
+/Assets/Oculus.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*

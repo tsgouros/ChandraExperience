@@ -9,11 +9,13 @@ public class ChangeScene : MonoBehaviour
     public OVRScreenFade[] screenFades;
     public float waitTime;
     private IEnumerator coroutine;
+    public bool controllerEnabled;
 
     // Start is called before the first frame update
     void Start()
     {
-        InputSystem.onAButtonPressed += UpdateScene;
+        if (controllerEnabled) 
+            InputSystem.onAButtonPressed += UpdateScene;
     }
 
     private void UpdateScene()  {
